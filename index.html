@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+    <img src="./assets/Logo.png" alt="Logo-alura">
+</header>
+<main class="presentacion">
+    <div class="presentacion__contenido">
+        <div class="contenido__input">
+            <textarea  id="texto1" class="contenido__input__textarea" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="contenido__opciones">
+                <label class="input__label">
+                    <img src="./assets/Vector.png" alt="">
+                    Solo letras minúsculas y sin acentos
+                </label>
+        </div>
+        <div class="content__buttons">
+            <button class="button" onclick="encriptarTexto()">Encriptar</button>
+            <button  class="button" onclick="desencriptarTexto()">Desencriptar</button>
+        </div>
+    </div>
+</div>
+
+    <div class="output-section">
+        <div class="result" id="outputPlaceholder">
+                    <img id="outputImage" src="./assets/Muñeco.png" alt="No message found"> 
+                    <p id="outputMessage"><b>Ningún mensaje fue encontrado</b></p>
+                    <p id="outputMessage1">Ingresa el texto que desees encriptar o desencriptar.</p>
+
+                    <div class=" output-section__hover">
+                        <textarea id="outputText"  class="ouput-section__textarea" readonly></textarea>
+                        <button id="copyButton" class="buttonCoppy" onclick="copiarTexto()">Copiar</button>
+                    </div>
+                    
+                </div>
+    </div>
+
+</main>
+
+<footer>
+
+</footer>
+
+    <script src="javaScript.js"></script>
+</body>
+</html>
